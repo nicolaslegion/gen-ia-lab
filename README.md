@@ -2,12 +2,12 @@
 This is a personal repository to learn LLM programming.
 
 
-##Things to do:
+## Things to do:
 - Create repository.
 - Create base classes for chat interaction with GPT model.
 - LangChain review and implementation
 
-###Resources:
+### Resources:
 - https://github.com/cpacker/MemGPT
 - https://github.com/dair-ai/Prompt-Engineering-Guide
 - https://github.com/microsoft/promptflow
