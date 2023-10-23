@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reservation System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Hotel Reservation System</h1>
+
+        <h2>Make a Reservation</h2>
+        <form action="/make_reservation" method="POST">
+            <label for="room_type">Room Type:</label>
+            <select name="room_type" id="room_type">
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+            </select><br>
+
+            <label for="check_in">Check-in Date:</label>
+            <input type="date" name="check_in" id="check_in"><br>
+
+            <label for="check_out">Check-out Date:</label>
+            <input type="date" name="check_out" id="check_out"><br>
+
+            <label for="guest_name">Guest Name:</label>
+            <input type="text" name="guest_name" id="guest_name"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"><br>
+
+            <input type="submit" value="Submit Reservation">
+        </form>
+
+        <h2>Search Reservations</h2>
+        <form action="/search_reservations" method="GET">
+            <label for="reservation_id">Reservation ID:</label>
+            <input type="text" name="reservation_id" id="reservation_id"><br>
+
+            <input type="submit" value="Search Reservation">
+        </form>
+    </div>
+    <div class="container">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert alert-success">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+
+</body>
+</html>

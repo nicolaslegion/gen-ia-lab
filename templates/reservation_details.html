@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Details</title>
+</head>
+<body>
+    <h1>Reservation Details</h1>
+    <table>
+        <tr>
+            <th>Reservation ID</th>
+            <td>{{ reservation['id'] }}</td>
+        </tr>
+        <tr>
+            <th>Room Type</th>
+            <td>{{ reservation['room_type'] }}</td>
+        </tr>
+        <tr>
+            <th>Check-in Date</th>
+            <td>{{ reservation['check_in_date'] }}</td>
+        </tr>
+        <tr>
+            <th>Check-out Date</th>
+            <td>{{ reservation['check_out_date'] }}</td>
+        </tr>
+        <tr>
+            <th>Guest Name</th>
+            <td>{{ reservation['guest_name'] }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ reservation['email'] }}</td>
+        </tr>
+        <tr>
+            <th>Total Cost</th>
+            <td>{{ reservation['total_cost'] }}</td>
+        </tr>
+        <tr>
+            <th>Reservation Status</th>
+            <td>{{ reservation['reservation_status'] }}</td>
+        </tr>
+    </table>
+</body>
+</html>

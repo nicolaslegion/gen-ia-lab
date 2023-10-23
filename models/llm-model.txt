@@ -1,0 +1,11 @@
+The Users Table stores information about website users who can make reservations. It includes fields for user identification, such as a user ID, username, and password, as well as contact details like email, first name, last name, phone number, and address.
+
+The Rooms Table contains details about the available rooms in the hotel. It includes room-specific information such as a room ID, room number, room type (e.g., single, double, suite), the rate per night, a description of the room, and a URL linking to an image of the room.
+
+The Reservations Table tracks reservation data. It has fields for a reservation ID, which uniquely identifies each reservation, a user ID (linked to the Users Table) indicating the person who made the reservation, a room ID (linked to the Rooms Table) to specify the reserved room, check-in and check-out dates, the total cost of the reservation, and a reservation status (e.g., pending, confirmed, canceled).
+
+The Guests Table is used to store information about guests associated with reservations. It includes fields such as a guest ID, a reference to the reservation ID they're associated with (linked to the Reservations Table), first name, last name, email, phone number, and address.
+
+The Payments Table keeps a record of payments related to reservations. It contains fields for a payment ID for unique identification, a reference to the reservation ID (linked to the Reservations Table) to tie payments to reservations, the payment date, the amount paid, and the payment status (e.g., pending, paid, refunded).
+
+The Reviews Table captures user-generated reviews and ratings for rooms. It includes fields such as a review ID for unique identification, a user ID (linked to the Users Table) indicating the user who left the review, a room ID (linked to the Rooms Table) specifying the room being reviewed, a rating (typically on a scale of 1-5 stars), a free-form review text, and a review date.
