@@ -3,8 +3,9 @@ This is a personal repository to learn LLM programming.
 
 
 ## Things to do:
-- Create repository.
-- Create base classes for chat interaction with GPT model.
+- Create repository [DONE].
+- Create base classes for chat interaction with GPT model [DONE].
+- Create base application with MVC design pattern in Flask [DONE].
 - LangChain review and implementation.
 - Experimentation for Tool usage.
 - Experimentation for SQL Querying.
